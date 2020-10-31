@@ -1,0 +1,68 @@
+2020-10-12 19:24:37,447 ERROR: Exception on /search [GET] [in c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Joseph Staresinovic\website\app\routes.py", line 219, in search
+    current_app.config['POSTS_PER_PAGE'])
+NameError: name 'current_app' is not defined
+2020-10-12 19:24:45,566 ERROR: Exception on /search [GET] [in c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Joseph Staresinovic\website\app\routes.py", line 219, in search
+    current_app.config['POSTS_PER_PAGE'])
+NameError: name 'current_app' is not defined
+2020-10-12 19:26:50,498 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
+2020-10-12 19:27:02,681 ERROR: Exception on /search [GET] [in c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\joseph staresinovic\appdata\local\programs\python\python38\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\Joseph Staresinovic\website\app\routes.py", line 218, in search
+    posts, total = Post.search(g.search_form.q.data, page,
+  File "C:\Users\Joseph Staresinovic\website\app\models.py", line 23, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+  File "C:\Users\Joseph Staresinovic\website\app\search.py", line 17, in query_index
+    if not app.elasticsearch:
+AttributeError: module 'flask.app' has no attribute 'elasticsearch'
+2020-10-12 19:34:23,028 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
+2020-10-12 20:16:35,768 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
+2020-10-12 20:18:19,548 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
+2020-10-12 20:23:09,188 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
+2020-10-12 20:24:56,231 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
+2020-10-12 20:26:06,842 INFO: Serial Agony startup [in C:\Users\Joseph Staresinovic\website\app\__init__.py:59]
